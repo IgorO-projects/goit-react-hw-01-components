@@ -2,7 +2,7 @@ import styles from './Statistics-list.module.css';
 import PropTypes from 'prop-types';
 
 
-const StatisticalItem = ({ label, percentage}) => {
+const StatisticalItem = ({ label, percentage }) => {
   const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
     
     return (

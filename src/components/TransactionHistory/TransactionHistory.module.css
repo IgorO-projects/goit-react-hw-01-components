@@ -1,0 +1,8 @@
+.transaction_history {
+    width: 400px;
+    ;
+}
+.transaction_history  thead, .transaction_history th {
+    background-color: steelblue;
+    border: 1px solid #757575;
+}

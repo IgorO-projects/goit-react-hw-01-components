@@ -24,3 +24,7 @@
 .avatar {
     margin-right: 10px;
 }
+.name {
+    font-size: 16px;
+    font-weight: 500;
+}

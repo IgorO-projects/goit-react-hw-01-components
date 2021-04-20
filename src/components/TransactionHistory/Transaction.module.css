@@ -1,0 +1,6 @@
+.tb_row:nth-child(2n) {
+    background-color: #f5f4fa;
+}
+.tb_row > td {
+    text-align: center;
+}

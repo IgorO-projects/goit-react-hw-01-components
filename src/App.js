@@ -9,6 +9,9 @@ import StatisticsList from './components/Statistics/Statistics-list.jsx';
 // Task03
 import friends from './components/Friends/friends.json';
 import FriendList from './components/Friends/FriendList.jsx';
+// Task 04
+import transactions from './components/TransactionHistory/transactions.json';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory.jsx'
 
 
 function App() {
@@ -32,6 +35,10 @@ function App() {
 
     <Container>
       <FriendList friends={friends}/>
+    </Container>
+
+    <Container>
+      <TransactionHistory transactions={transactions}/>
     </Container>
     </>
   );

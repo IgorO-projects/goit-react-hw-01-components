@@ -1,17 +1,21 @@
+import styles from './Statistics-list.module.css';
 import PropTypes from 'prop-types';
 
-const StatisticalItem = ({id, label, percentage}) => {
+
+const StatisticalItem = ({ label, percentage}) => {
+  const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    
     return (
-    <li className="item" key={id}>
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}%</span>
+    <li style={{backgroundColor: randomColor}} 
+    className={styles.item}>
+      <span className={styles.label}>{label}</span>
+      <span className={styles.percentage}>{percentage}%</span>
     </li>
     )
 };
 
 
 StatisticalItem.propTypes = {
-    // id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
 }

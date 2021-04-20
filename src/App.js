@@ -4,9 +4,12 @@ import user from './components/Profile/user.json';
 import Profile from './components/Profile/Profile.jsx';
 // Task 02
 import Section from './components/Statistics/Section.jsx';
-import StatisticsList from './components/Statistics/Statistics-list.jsx';
 import statisticalData from './components/Statistics/statistical-data.json';
-// import Statistic from './components/Statistics/Statistic.jsx';
+import StatisticsList from './components/Statistics/Statistics-list.jsx';
+// Task03
+import friends from './components/Friends/friends.json';
+import FriendList from './components/Friends/FriendList.jsx';
+
 
 function App() {
   return (
@@ -20,10 +23,15 @@ function App() {
       stats={user.stats}
       />
     </Container>
+
     <Container>
     <Section>
       <StatisticsList statisticalData={statisticalData}/>
     </Section>
+    </Container>
+
+    <Container>
+      <FriendList friends={friends}/>
     </Container>
     </>
   );

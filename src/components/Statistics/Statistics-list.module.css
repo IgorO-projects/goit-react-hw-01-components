@@ -3,3 +3,11 @@
     display: flex;
     justify-content: center;
 }
+.item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 65px;
+    height: 65px;
+    border: 1px solid rgb(0 0 0 / 12%);
+}
